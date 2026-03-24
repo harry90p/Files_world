@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free online file processing: upload, merge, split, compress, convert, OCR, edit, rotate, crop, watermark, and encrypt files securely." />
+    <meta name="keywords" content="PDF merge, split PDF, OCR, file converter, free file tools" />
+    <title>Files World | Free File Manager & PDF Tools</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Files World</h1>
+      <p>Free, anonymous, and easy online file processing with OCR + conversion tools.</p>
+      <a class="primary" href="tools.html">Open Full Tools Demo</a>
+    </header>
+
+    <main class="container">
+      <section class="panel">
+        <h2>Feature Overview</h2>
+        <div class="chips">
+          <span>Upload/Download Any Format</span><span>Merge</span><span>Split</span><span>Compress</span><span>Convert</span><span>OCR</span><span>Edit</span><span>Rotate/Crop</span><span>Watermark</span><span>Encrypt/Decrypt</span>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Quick Processor</h2>
+        <div class="tool-grid" id="tool-grid"></div>
+        <div class="drop-zone" id="drop-zone">
+          <input id="file-input" type="file" multiple hidden />
+          <p><strong>Drag and drop files here</strong></p>
+          <button class="secondary" id="browse-btn">Choose Files</button>
+          <p id="file-list">No files selected.</p>
+        </div>
+        <div id="options" class="options"></div>
+        <button id="process-btn" class="primary">Process Files</button>
+        <div id="status-area" class="status-area" hidden>
+          <p id="status-message">Preparing request...</p>
+          <div class="progress-wrap"><div id="progress-bar"></div></div>
+        </div>
+        <div id="result" hidden>
+          <p id="result-text"></p>
+          <a id="download-link" class="primary" href="#" download>Download Output</a>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>No account required. Temporary file retention only.</p></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
